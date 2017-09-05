@@ -65,3 +65,4 @@ iOSInjectionProject/
 contents.xcworkspacedata
 *.lock
 Podfile.lock
+Pods

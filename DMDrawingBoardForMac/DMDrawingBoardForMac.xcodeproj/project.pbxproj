@@ -12,6 +12,9 @@
 		6B3D153F1F5E88810029E58D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D153E1F5E88810029E58D /* ViewController.m */; };
 		6B3D15411F5E88810029E58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D15401F5E88810029E58D /* Assets.xcassets */; };
 		6B3D15441F5E88810029E58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D15421F5E88810029E58D /* Main.storyboard */; };
+		6B3D154F1F5E8D800029E58D /* DMDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D154C1F5E8D800029E58D /* DMDrawingBoardView.m */; };
+		6B3D15501F5E8D800029E58D /* DMStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D154E1F5E8D800029E58D /* DMStroke.m */; };
+		8D5AD2E143A2394A28FBE794 /* libPods-DMDrawingBoardForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D51757FE0113D88774A9C20F /* libPods-DMDrawingBoardForMac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,13 @@
 		6B3D15401F5E88810029E58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B3D15431F5E88810029E58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B3D15451F5E88810029E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3D154B1F5E8D800029E58D /* DMDrawingBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDrawingBoardView.h; sourceTree = "<group>"; };
+		6B3D154C1F5E8D800029E58D /* DMDrawingBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDrawingBoardView.m; sourceTree = "<group>"; };
+		6B3D154D1F5E8D800029E58D /* DMStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStroke.h; sourceTree = "<group>"; };
+		6B3D154E1F5E8D800029E58D /* DMStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStroke.m; sourceTree = "<group>"; };
+		7BF4D2E0A799570B7330AA5D /* Pods-DMDrawingBoardForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMDrawingBoardForMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMDrawingBoardForMac/Pods-DMDrawingBoardForMac.release.xcconfig"; sourceTree = "<group>"; };
+		8D2D7E844741FCB7E9DE1F7E /* Pods-DMDrawingBoardForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMDrawingBoardForMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMDrawingBoardForMac/Pods-DMDrawingBoardForMac.debug.xcconfig"; sourceTree = "<group>"; };
+		D51757FE0113D88774A9C20F /* libPods-DMDrawingBoardForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMDrawingBoardForMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5AD2E143A2394A28FBE794 /* libPods-DMDrawingBoardForMac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				6B3D15361F5E88810029E58D /* DMDrawingBoardForMac */,
 				6B3D15351F5E88810029E58D /* Products */,
+				8CF3FCC246B3F79E0B87BD18 /* Pods */,
+				6B849A90DBA1A90DBE9A3E7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,10 @@
 				6B3D15381F5E88810029E58D /* AppDelegate.m */,
 				6B3D153D1F5E88810029E58D /* ViewController.h */,
 				6B3D153E1F5E88810029E58D /* ViewController.m */,
+				6B3D154B1F5E8D800029E58D /* DMDrawingBoardView.h */,
+				6B3D154C1F5E8D800029E58D /* DMDrawingBoardView.m */,
+				6B3D154D1F5E8D800029E58D /* DMStroke.h */,
+				6B3D154E1F5E8D800029E58D /* DMStroke.m */,
 				6B3D15401F5E88810029E58D /* Assets.xcassets */,
 				6B3D15421F5E88810029E58D /* Main.storyboard */,
 				6B3D15451F5E88810029E58D /* Info.plist */,
@@ -76,6 +93,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6B849A90DBA1A90DBE9A3E7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51757FE0113D88774A9C20F /* libPods-DMDrawingBoardForMac.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF3FCC246B3F79E0B87BD18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D2D7E844741FCB7E9DE1F7E /* Pods-DMDrawingBoardForMac.debug.xcconfig */,
+				7BF4D2E0A799570B7330AA5D /* Pods-DMDrawingBoardForMac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B3D15481F5E88810029E58D /* Build configuration list for PBXNativeTarget "DMDrawingBoardForMac" */;
 			buildPhases = (
+				E577D66C1596B723CD496341 /* [CP] Check Pods Manifest.lock */,
 				6B3D15301F5E88810029E58D /* Sources */,
 				6B3D15311F5E88810029E58D /* Frameworks */,
 				6B3D15321F5E88810029E58D /* Resources */,
+				94634E5CE6EFCCCACCBD53D9 /* [CP] Embed Pods Frameworks */,
+				4C479596AEBECDACFA9F1053 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,14 +178,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C479596AEBECDACFA9F1053 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMDrawingBoardForMac/Pods-DMDrawingBoardForMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94634E5CE6EFCCCACCBD53D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMDrawingBoardForMac/Pods-DMDrawingBoardForMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E577D66C1596B723CD496341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B3D15301F5E88810029E58D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6B3D153F1F5E88810029E58D /* ViewController.m in Sources */,
+				6B3D15501F5E8D800029E58D /* DMStroke.m in Sources */,
 				6B3D153C1F5E88810029E58D /* main.m in Sources */,
 				6B3D15391F5E88810029E58D /* AppDelegate.m in Sources */,
+				6B3D154F1F5E8D800029E58D /* DMDrawingBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +344,7 @@
 		};
 		6B3D15491F5E88810029E58D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2D7E844741FCB7E9DE1F7E /* Pods-DMDrawingBoardForMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -269,6 +357,7 @@
 		};
 		6B3D154A1F5E88810029E58D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF4D2E0A799570B7330AA5D /* Pods-DMDrawingBoardForMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -298,6 +387,7 @@
 				6B3D154A1F5E88810029E58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
